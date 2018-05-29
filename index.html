@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LongRoute</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<button onclick="start();">Start</button>
+<h2></h2><br>
+
+	<script src="original.js"></script>
+	<div class="board">
+	<div class="square none" id="s11"></div>
+	<div class="square none" id="s12"></div>
+	<div class="square none" id="s13"></div>
+	<div class="square none" id="s14"></div>
+	<div class="square none" id="s15"></div>
+	<div class="square none" id="s16"></div>
+	<div class="square none" id="s17"></div>
+	<div class="square none" id="s18"></div>
+	<div class="square none" id="s21"></div>
+	<div class="square none" id="s22"></div>
+	<div class="square none" id="s23"></div>
+	<div class="square none" id="s24"></div>
+	<div class="square none" id="s25"></div>
+	<div class="square none" id="s26"></div>
+	<div class="square none" id="s27"></div>
+	<div class="square none" id="s28"></div>
+	<div class="square none" id="s31"></div>
+	<div class="square none" id="s32"></div>
+	<div class="square none" id="s33"></div>
+	<div class="square none" id="s34"></div>
+	<div class="square none" id="s35"></div>
+	<div class="square none" id="s36"></div>
+	<div class="square none" id="s37"></div>
+	<div class="square none" id="s38"></div>
+	<div class="square none" id="s41"></div>
+	<div class="square none" id="s42"></div>
+	<div class="square none" id="s43"></div>
+	<div class="square none" id="s44"></div>
+	<div class="square none" id="s45"></div>
+	<div class="square none" id="s46"></div>
+	<div class="square none" id="s47"></div>
+	<div class="square none" id="s48"></div>
+	<div class="square none" id="s51"></div>
+	<div class="square none" id="s52"></div>
+	<div class="square none" id="s53"></div>
+	<div class="square none" id="s54"></div>
+	<div class="square none" id="s55"></div>
+	<div class="square none" id="s56"></div>
+	<div class="square none" id="s57"></div>
+	<div class="square none" id="s58"></div>
+	<div class="square none" id="s61"></div>
+	<div class="square none" id="s62"></div>
+	<div class="square none" id="s63"></div>
+	<div class="square none" id="s64"></div>
+	<div class="square none" id="s65"></div>
+	<div class="square none" id="s66"></div>
+	<div class="square none" id="s67"></div>
+	<div class="square none" id="s68"></div>
+	<div class="square none" id="s71"></div>
+	<div class="square none" id="s72"></div>
+	<div class="square none" id="s73"></div>
+	<div class="square none" id="s74"></div>
+	<div class="square none" id="s75"></div>
+	<div class="square none" id="s76"></div>
+	<div class="square none" id="s77"></div>
+	<div class="square none" id="s78"></div>
+	<div class="square none" id="s81"></div>
+	<div class="square none" id="s82"></div>
+	<div class="square none" id="s83"></div>
+	<div class="square none" id="s84"></div>
+	<div class="square none" id="s85"></div>
+	<div class="square none" id="s86"></div>
+	<div class="square none" id="s87"></div>
+	<div class="square none" id="s88"></div>
+    </div>
+
+    <br>
+	<div id='mutate'></div>
+	<br>
+	<div id='percent'></div>
+	<br>現在の最長ルート↓
+	<br><br>
+
+<div class="board">
+	<div class="square none" id="a11"></div>
+	<div class="square none" id="a12"></div>
+	<div class="square none" id="a13"></div>
+	<div class="square none" id="a14"></div>
+	<div class="square none" id="a15"></div>
+	<div class="square none" id="a16"></div>
+	<div class="square none" id="a17"></div>
+	<div class="square none" id="a18"></div>
+	<div class="square none" id="a21"></div>
+	<div class="square none" id="a22"></div>
+	<div class="square none" id="a23"></div>
+	<div class="square none" id="a24"></div>
+	<div class="square none" id="a25"></div>
+	<div class="square none" id="a26"></div>
+	<div class="square none" id="a27"></div>
+	<div class="square none" id="a28"></div>
+	<div class="square none" id="a31"></div>
+	<div class="square none" id="a32"></div>
+	<div class="square none" id="a33"></div>
+	<div class="square none" id="a34"></div>
+	<div class="square none" id="a35"></div>
+	<div class="square none" id="a36"></div>
+	<div class="square none" id="a37"></div>
+	<div class="square none" id="a38"></div>
+	<div class="square none" id="a41"></div>
+	<div class="square none" id="a42"></div>
+	<div class="square none" id="a43"></div>
+	<div class="square none" id="a44"></div>
+	<div class="square none" id="a45"></div>
+	<div class="square none" id="a46"></div>
+	<div class="square none" id="a47"></div>
+	<div class="square none" id="a48"></div>
+	<div class="square none" id="a51"></div>
+	<div class="square none" id="a52"></div>
+	<div class="square none" id="a53"></div>
+	<div class="square none" id="a54"></div>
+	<div class="square none" id="a55"></div>
+	<div class="square none" id="a56"></div>
+	<div class="square none" id="a57"></div>
+	<div class="square none" id="a58"></div>
+	<div class="square none" id="a61"></div>
+	<div class="square none" id="a62"></div>
+	<div class="square none" id="a63"></div>
+	<div class="square none" id="a64"></div>
+	<div class="square none" id="a65"></div>
+	<div class="square none" id="a66"></div>
+	<div class="square none" id="a67"></div>
+	<div class="square none" id="a68"></div>
+	<div class="square none" id="a71"></div>
+	<div class="square none" id="a72"></div>
+	<div class="square none" id="a73"></div>
+	<div class="square none" id="a74"></div>
+	<div class="square none" id="a75"></div>
+	<div class="square none" id="a76"></div>
+	<div class="square none" id="a77"></div>
+	<div class="square none" id="a78"></div>
+	<div class="square none" id="a81"></div>
+	<div class="square none" id="a82"></div>
+	<div class="square none" id="a83"></div>
+	<div class="square none" id="a84"></div>
+	<div class="square none" id="a85"></div>
+	<div class="square none" id="a86"></div>
+	<div class="square none" id="a87"></div>
+	<div class="square none" id="a88"></div>
+</div>
+
+</body>
+	
+</html>

@@ -1,0 +1,33 @@
+.board{
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	border:solid 4px;
+	background-color:black;
+	width:247px;
+	height:247px;
+}
+.none{
+	background-color:white;
+}
+.none,.kouho,.firm{
+	width:30px;
+    height:30px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:30px;
+}
+.firm{
+    background-color: chartreuse;
+}
+.kouho{
+    background-color: blueviolet;
+}
+#s11,#a11{
+    background-color: blue;
+}
+#s88,#a88{
+    background-color: brown;
+}
